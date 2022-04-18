@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -58,63 +53,24 @@ table {
     float: left;
     display: inline-block;
 }
+.news-portal{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, 100px);
+}
 .content-right{
     width: 34%;
     float: right;
     display: inline-block;
 
 }
-/*Slider style*/
-.slider{
-    width: 100%;
-    float: left;
-    display: inline-block;
-    position: relative;
-}
-.cycle-slideshow{
-    position: relative;
-}
-.cycle-overlay{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    color: #fff;
-    width: 100%;
-    display: inline-block;
-    line-height: 24px;
-    padding-left: 5px;
-    box-sizing: border-box;
-}
-.slider-control{
-    position: absolute;
-    top: 40%;
-    z-index: 1000;
-    width: 100%;
-}
-.slider-control span{
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    text-align: center;
-    line-height: 35px;
-    background-color: #1111e1;
-    color: #fff;
-    cursor: pointer;
-}
-.slider-control span#next{
-    float: right;
-}
-.slider-control span#prev{
-    float: left;
-}
 .carousel-css img{
     height: 60vh;
 }
 .carousel-img{
-    size: 50px;
     width: 100%;
-    height: 50%;
+    height: auto;
 
 }
 .carousel-divcss{
@@ -154,20 +110,7 @@ table {
     width: 100%;
     margin-bottom: 10px;
 }
-.news-portal figure{
-    width: 48%;
-    float: left;
-    background-color: #fff;
-    padding: 5px;
-    margin-bottom: 25px;
-    box-shadow: 0 1px 1px gray;
-}
-.news-portal figcaption{
-    font-size: 16px;
-    color: #333;
-    padding: 3px;
-    line-height: 20px;
-}
+
 /*news board style*/
 .news-board{
     display: inline-block;
@@ -186,41 +129,35 @@ table {
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+.news-board a{
+    text-decoration: none;
+}
+.news-board a:hover{
+    text-decoration: underline;
+}
 .news-roller{
     display: inline-block;
     background-color: #fff;
 }
 .news-roller p{
-    width: 97%;
+    width: 100%;
     display: inline-block;
     float: left;
-    margin-bottom: 15px;
-    margin: 3px;
-    box-shadow: 0 3px 1px gainsboro;
+
     box-sizing: border-box;
 }
 .news-roller p a{
     color: #333;
 }
 .news-roller img{
-    width: 28%;
     float: left;
+    width:auto;
+    height: 100%;
     margin-right: 3px;
 }
-.news-roller span{
-    padding: 5px;
-    width: 70%;
-    display: inline-block;
-    float: left;
-    line-height: 20px;
-}
-.news-roller h5{
-    margin-bottom: 0;
-    margin-top: 10px;
 
-}
-.news-roller h6{
-    font-size: smaller;
+.news-roller p{
+    font-size: medium;
     float: right;
     font-family: sans-serif;
 }
